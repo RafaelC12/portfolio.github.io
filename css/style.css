@@ -1,0 +1,28 @@
+body {
+	width: 100%;
+}
+
+.main{
+	width: 78.88888%;
+	margin: 0 auto;
+}
+
+header {
+	height: 88px;
+}
+
+.painel p {
+	padding-top: 35px;
+}
+
+nav{
+	position: absolute;
+	top: 35px;
+	right: calc(11% - 6px);
+}
+
+nav li {
+	display: inline-block;
+	margin-left: 15px;
+}
+
