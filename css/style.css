@@ -1,5 +1,6 @@
 body {
 	width: 100%;
+	font-family: 'Roboto', sans-serif;
 }
 
 .main{
@@ -9,6 +10,10 @@ body {
 
 header {
 	height: 88px;
+}
+
+.dados-pessoais {
+	font-weight: bold;
 }
 
 .painel p {
@@ -26,3 +31,39 @@ nav li {
 	margin-left: 15px;
 }
 
+nav a{
+	text-decoration: none;
+	color: inherit;
+}
+
+.apresentacao {
+	height: 368px;
+	margin: 24px 0;
+}
+
+.apresentacao-conteudo {
+	height: 246px;
+	padding: 61px 0;
+}
+
+.apresentacao-conteudo p {
+	margin: 24px 0;
+	font-size: 1.2em;
+}
+
+.apresentacao-conteudo li {
+	display: inline;
+	margin-right: 24px;
+	font-size: 1.2em;
+}
+
+h1 {
+	font-size: 42px;
+	font-weight: bold;
+}
+
+.foto-perfil {
+	float: right;
+	height: 368px;
+	width: 368px;
+}
