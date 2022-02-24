@@ -1,6 +1,12 @@
+* {
+	box-sizing: border-box;
+}
+
 body {
 	width: 100%;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Roboto Serif', sans-serif;
+	background: #E4E5C6;
+	color: #222222;
 }
 
 .main{
@@ -12,17 +18,24 @@ header {
 	height: 88px;
 }
 
-.dados-pessoais {
+.painel p {
+	padding-top: 2.3em;
 	font-weight: bold;
 }
 
-.painel p {
-	padding-top: 35px;
+.logo {
+	display: inline-flex;
+}
+
+.logo-img {
+	width: 28px;
+	height: 28px;
+	padding-top: 1.8em;
 }
 
 nav{
 	position: absolute;
-	top: 35px;
+	top: 2.3em;
 	right: calc(11% - 6px);
 }
 
@@ -36,9 +49,17 @@ nav a{
 	color: inherit;
 }
 
+nav a:hover {
+	border: 4px solid #222222;
+	border-radius: 5px;
+	padding: 2px;
+	transform: scale(1.2);
+	font-weight: bold;
+}
+
 .apresentacao {
 	height: 368px;
-	margin: 24px 0;
+	margin-bottom: 24px;
 }
 
 .apresentacao-conteudo {
@@ -48,17 +69,17 @@ nav a{
 
 .apresentacao-conteudo p {
 	margin: 24px 0;
-	font-size: 1.2em;
+	font-size: 22px;
 }
 
 .apresentacao-conteudo li {
 	display: inline;
 	margin-right: 24px;
-	font-size: 1.2em;
+	font-size: 16px;
 }
 
 h1 {
-	font-size: 42px;
+	font-size: 52px;
 	font-weight: bold;
 }
 
@@ -66,4 +87,70 @@ h1 {
 	float: right;
 	height: 368px;
 	width: 368px;
+}
+
+.sobre {
+	margin-bottom: 24px;
+	padding: 20px 0px;
+	width: 60%;
+	line-height: 1.2;
+}
+
+.titulo-sections {
+	font-size: 38px;
+	text-align: center;
+}
+
+.sobre-conteudo p {
+	margin-top: 10px;
+	font-size: 16px;
+}
+
+.sobre .assinatura {
+	font-family: 'Mea Culpa', cursive;
+	font-size: 52px;
+
+}
+
+.skills , .hobbies {
+	margin: 24px 0;
+	width: 100%;
+	padding-top: 20px;
+}
+
+.lista-skills-hobbies {
+	margin-top: 5px;
+	width: 100%;
+	display: flex;
+	justify-content: space-evenly;
+	padding-top: 15px;
+}
+
+.skills li, .hobbies li {
+	width: 16.464%;
+	position: relative;
+	height: 174px;
+	display: inline-block;
+	padding-top: 4em;
+	background: #C4B9A1;
+	text-align: center;
+}
+
+.skills li:hover, .hobbies li:hover {
+	border: 4px solid #222222;
+	border-radius: 5px;
+	transform: scale(1.3);
+	font-weight: bold;
+}
+
+li img{
+	display: block;
+	position: relative;
+	margin: 10% auto;
+	width: 55px;
+	height: 50px;
+}
+
+#css-logo {
+	width: 38px;
 }
