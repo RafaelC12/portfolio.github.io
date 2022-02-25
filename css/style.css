@@ -30,7 +30,7 @@ header {
 .logo-img {
 	width: 28px;
 	height: 28px;
-	padding-top: 1.8em;
+	margin-top: 1.8em;
 }
 
 nav{
@@ -153,4 +153,81 @@ li img{
 
 #css-logo {
 	width: 38px;
+}
+
+@media screen and (max-width: 480px) {
+	.main{
+		width: 100%;
+	}
+
+	header{
+		height: 70px;
+	}
+
+	.painel p {
+		padding-top: 0.5em;
+	}
+
+	.logo-img {
+		margin-top: 0;
+	}
+
+	header li {
+		display: none;
+	}
+
+	.email-header {
+		display: block;
+		position: relative;
+		left: 1.8em;
+	}
+
+	.apresentacao {
+		height: 294px;
+	}
+
+	.foto-perfil {
+		float: left;
+		width: 98px;
+		height: 98px;
+		margin-right: 5px;
+		margin-bottom: 5px;
+	}
+
+	h1{
+		font-size: 30px;
+	}
+
+	.apresentacao-conteudo {
+		padding: 10px 0;
+	}
+
+	.sobre {
+		width: 90%;
+	}
+
+	.skills li, .hobbies li {
+		width: 25%;
+		margin: 15px 14px;
+	}
+
+	.lista-skills-hobbies {
+		display: inline;
+	}
+
+	#gambi {
+		position: relative;
+		bottom: 15px;
+	}
+}
+
+@media screen and (max-width: 1050px){
+
+	.painel p {
+		padding-top: 0.5em;
+	}
+
+	.logo-img {
+		margin-top: 0;
+	}
 }
