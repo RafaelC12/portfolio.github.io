@@ -1,0 +1,14 @@
+.logo {
+	align-items: center;
+	display: flex;
+}
+
+.logo__img {
+    height: 28px;
+	width: 28px;
+}
+
+.logo__nome {
+	font-weight: bold;
+	padding-top: 0.3rem;
+}

@@ -1,0 +1,11 @@
+.sobre {
+    line-height: 1.2;
+	margin: 96px 0;
+	width: 100%;
+}
+
+@media screen and (min-width: 1250px) {
+    .sobre {
+        width: 60%;
+    }
+}

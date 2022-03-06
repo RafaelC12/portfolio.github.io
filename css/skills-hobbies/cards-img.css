@@ -1,0 +1,11 @@
+.cards__img{
+	display: block;
+	height: 50px;
+	margin-bottom: 10%;
+	position: relative;
+	width: 40%;
+}
+
+#css-logo {
+	width: 30%;
+}
