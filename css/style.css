@@ -3,35 +3,21 @@
 }
 
 body {
-	width: 100%;
-	font-family: 'Roboto Serif', sans-serif;
 	background: #E4E5C6;
 	color: #222222;
+	font-family: 'Roboto Serif', sans-serif;
+	width: 100%;
 }
 
 .main{
-	width: 78.88888%;
 	margin: 0 auto;
+	width: 78.88888%;
 }
 
 .titulo-sections {
 	font-size: 38px;
+	font-weight: bold;
 	text-align: center;
-}
-
-.lista-formacao {
-	display: flex;
-	justify-content: space-evenly;
-}
-
-.lista-formacao li {
-	display: inline-block;
-	width: 32%;
-}
-
-.lista-formacao img {
-	width: 100%;
-	height: 286px;
 }
 
 @media screen and (max-width: 480px) {
