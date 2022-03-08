@@ -1,5 +1,5 @@
 .apresentacao__conteudo {
-	height: 246px;
+	height: auto;
 }
 
 .conteudo__titulo {
@@ -10,7 +10,7 @@
 
 .conteudo__resumo {
 	font-size: 22px;
-    margin: 24px 0;
+    margin-bottom:  24px;
 }
 
 .conteudo__links {

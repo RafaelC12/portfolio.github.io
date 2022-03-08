@@ -2,6 +2,7 @@
     align-items: space-around;
     display: flex;
     flex-direction: row-reverse;
-	height: 368px;
+    align-items: center;
+	height: auto;
     margin: 32px 0;
 }

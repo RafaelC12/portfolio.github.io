@@ -1,0 +1,30 @@
+.projetos__descricao {
+    display: block;
+    margin-left: 2rem;
+}
+
+.projetos__descricao-titulo {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.projetos__descricao-subtitulo {
+    font-size: 16px;
+    margin-bottom: 0.5rem;
+}
+
+.projetos__descricao-botao {
+    background-color: #222222;
+    border-radius: 5px;
+    border-style: inset;
+    color: #E4E5C6;
+    cursor: pointer;
+    height: 2.5rem;
+    margin-right: 1rem;
+    text-align: center;
+}
+
+.projetos__descricao-botao:hover {
+    color: #3CBFBA;
+}
