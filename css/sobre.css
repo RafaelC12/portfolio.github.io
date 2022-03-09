@@ -1,0 +1,41 @@
+.sobre {
+    line-height: 1.2;
+	margin: 32px 0;
+    padding-top: 64px;
+    padding-bottom: 64px;
+	width: 100vw;
+}
+
+.sobre__titulo {
+    font-size: 38px;
+}
+
+.sobre__conteudo__texto {
+	font-size: 16px;
+	margin: 10px 0;
+}
+
+.sobre__conteudo__assinatura {
+	font-family: 'Mea Culpa', cursive;
+	font-size: 52px;
+}
+
+@media screen and (min-width: 1250px) {
+    .sobre {
+        padding-right: 40%;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    .sobre__titulo {
+        font-size: 26px;
+    }
+
+    .sobre__conteudo__texto {
+        font-size: 16px;
+    }
+
+    .sobre__conteudo__assinatura {
+        font-size: 34px;
+    }
+}

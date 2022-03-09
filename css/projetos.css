@@ -1,3 +1,21 @@
+.projeto__1 {
+    align-items: center;
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 64px;
+}
+
+.projetos__titulo {
+    margin: 32px 0;
+}
+
+.projetos__img {
+    box-shadow: 10px 10px 2px 1px #C4B9A1;
+    border-radius: 2px;
+    height: 406px;
+    width: 70%;
+}
+
 .projetos__descricao {
     display: block;
     margin-left: 2rem;
@@ -25,6 +43,22 @@
     text-align: center;
 }
 
+.projetos__descricao-botao a {
+    color: inherit;
+    text-decoration: none;
+}
+
 .projetos__descricao-botao:hover {
     color: #3CBFBA;
+}
+
+@media screen and (max-width: 678px) {
+    .projeto__1 {
+        display: block;
+    }
+
+    .projetos__img {
+        width: 100%;
+        margin-bottom: 15px;
+    }
 }

@@ -9,9 +9,15 @@ body {
 	width: 100%;
 }
 
-.main{
-	width: 78.8888%;
-	margin: 0 auto;
+.container {
+	padding-left: 10%;
+	padding-right: 10%;
+}
+
+.bg-escuro {
+	background-color: #C4B9A1;
+    background-clip: padding-box;
+    background-size: cover;
 }
 
 .titulo-sections {
@@ -20,20 +26,24 @@ body {
 	text-align: center;
 }
 
-@media screen and (max-width: 480px) {
-	.main{
-		width: 100%;
-	}
-}
+/*@media screen and (max-width: 480px) {
+	
+}*/
 
 @media screen and (max-width: 860px){
-	.main{
-		width: 100%;
+	.container {
+		padding-left: 2%;
+		padding-right: 2%;
+	}
+	
+	.titulo-sections {
+		font-size: 26px;
 	}
 }
 
 @media screen and (max-width: 1041px) and (min-width: 860px){
-	.main{
-		width: 95%;
+	.container {
+		padding-left: 5%;
+		padding-right: 5%;
 	}
 }

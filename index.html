@@ -7,125 +7,109 @@
 		<link href="https://fonts.googleapis.com/css2?family=Mea+Culpa&family=Roboto+Serif&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="css/reset.css" />
 		<link rel="stylesheet" href="css/style.css" />
-		<link rel="stylesheet" href="./css/painel/painel.css" />
-		<link rel="stylesheet" href="./css/painel/painel-logo.css" />
-		<link rel="stylesheet" href="./css/painel/painel-navegacao.css" />
-		<link rel="stylesheet" href="./css/apresentacao/apresentacao.css" />
-		<link rel="stylesheet" href="./css/apresentacao/apresentacao-foto.css" />
-		<link rel="stylesheet" href="./css/apresentacao/apresentacao-conteudo.css" />
-		<link rel="stylesheet" href="./css/sobre-mim/sobre.css" />
-		<link rel="stylesheet" href="./css/sobre-mim/sobre-titulo.css" />
-		<link rel="stylesheet" href="./css/sobre-mim/sobre-conteudo.css" />
-		<link rel="stylesheet" href="./css/skills-hobbies/skills-hobbies.css" />
-		<link rel="stylesheet" href="./css/skills-hobbies/skills-hobbies-cards.css" />
-		<link rel="stylesheet" href="./css/skills-hobbies/cards-item.css" />
-		<link rel="stylesheet" href="./css/skills-hobbies/cards-img.css" />
-		<link rel="stylesheet" href="./css/formacao/formacao.css" />
-		<link rel="stylesheet" href="./css/formacao/formacao-cursos.css" />
-		<link rel="stylesheet" href="./css/formacao/cursos-item.css" />
-		<link rel="stylesheet" href="./css/projetos/projetos.css" />
-		<link rel="stylesheet" href="./css/projetos/projetos-img.css" />
-		<link rel="stylesheet" href="./css/projetos/projetos-descricao.css" />
-
+		<link rel="stylesheet" href="./css/painel.css" />
+		<link rel="stylesheet" href="./css/apresentacao.css" />
+		<link rel="stylesheet" href="./css/sobre.css" />
+		<link rel="stylesheet" href="./css/skills-hobbies.css" />
+		<link rel="stylesheet" href="./css/formacao.css" />
+		<link rel="stylesheet" href="./css/projetos.css" />
 	</head>
 	<body>
-		<div class="main">
-			<header class="painel">
-				<div class="logo">
-					<img class="logo__img" src="img/logo.png" alt="Estrelas como logo para o nome">
-					<p class="logo__nome">Rafael Chagas</p>
+		<header class="painel container bg-escuro">
+			<div class="logo">
+				<img class="logo__img" src="img/logo.png" alt="Estrelas como logo para o nome">
+				<p class="logo__nome">Rafael Chagas</p>
+			</div>
+			<nav class="navegacao">
+				<ul class="navegacao__lista">
+					<li class="navegacao__lista--item"><a class="navegacao__lista--link" href="#sobre-mim">Sobre mim</a></li>
+					<li class="navegacao__lista--item"><a class="navegacao__lista--link" href="#skills">Skills</a></li>
+					<li class="navegacao__lista--item"><a class="navegacao__lista--link" href="#hobbies">Hobbies</a></li>
+					<li class="navegacao__lista--item"><a class="navegacao__lista--link" href="#formacao">Formação</a></li>
+					<li class="navegacao__lista--item"><a class="navegacao__lista--link" href="#projetos">Projetos</a></li>
+					<li class="navegacao__lista--item navegacao__lista--item--email">rafaelcchagas@outlook.com</li>
+				</ul>
+			</nav>
+		</header>
+		<main class="conteudo-principal">
+			<section class="apresentacao container" id="apresentacao">
+				<img class="apresentacao__foto-perfil" src="img/perfil.png" alt="foto de perfil">
+				<div class="apresentacao__conteudo">
+					<h1 class="conteudo__titulo">Olá, meu nome é Rafael Chagas e construo páginas Web</h1>
+					<p class="conteudo__resumo">Atualmente faço parte do projeto Oracle ONE na Alura, aprendendo programação front-end e aplicando em projetos.</p>
+					<ul class="conteudo__links">
+						<li class="conteudo__links github"><a href="https://github.com/RafaelC12" target="_blank">Github 🡥</a></li>
+						<li class="conteudo__links linkedin"><a href="https://www.linkedin.com/in/rafael-chagas-16799620b/" target="_blank">Linkedin 🡥</a></li>
+						<li class="conteudo__links curriculo"><a href="">Currículo 🡥</a></li>
+					</ul>
 				</div>
-				<nav class="navegacao">
-					<ul class="navegacao__lista">
-						<li class="navegacao__lista--item"><a class="navegacao__lista--link" href="#sobre-mim">Sobre mim</a></li>
-						<li class="navegacao__lista--item"><a class="navegacao__lista--link" href="#skills">Skills</a></li>
-						<li class="navegacao__lista--item"><a class="navegacao__lista--link" href="#hobbies">Hobbies</a></li>
-						<li class="navegacao__lista--item"><a class="navegacao__lista--link" href="#formacao">Formação</a></li>
-						<li class="navegacao__lista--item"><a class="navegacao__lista--link" href="#projetos">Projetos</a></li>
-						<li class="navegacao__lista--item navegacao__lista--item--email">rafaelcchagas@outlook.com</li>
-					</ul>
-				</nav>
-			</header>
-			<main class="conteudo-principal">
-				<section class="apresentacao" id="apresentacao">
-					<img class="apresentacao__foto-perfil" src="img/perfil.png" alt="foto de perfil">
-					<div class="apresentacao__conteudo">
-						<h1 class="conteudo__titulo">Olá, meu nome é Rafael Chagas e construo páginas Web</h1>
-						<p class="conteudo__resumo">Atualmente faço parte do projeto Oracle ONE na Alura, aprendendo programação front-end e aplicando em projetos.</p>
-						<ul class="conteudo__links">
-							<li class="conteudo__links github"><a href="https://github.com/RafaelC12" target="_blank">Github 🡥</a></li>
-							<li class="conteudo__links linkedin"><a href="https://www.linkedin.com/in/rafael-chagas-16799620b/" target="_blank">Linkedin 🡥</a></li>
-							<li class="conteudo__links curriculo"><a href="">Currículo 🡥</a></li>
-						</ul>
+			</section>
+			<section class="sobre container bg-escuro" id="sobre-mim">
+				<h2 class="sobre__titulo">Sobre mim</h2>
+				<div class="sobre__conteudo">
+					<p class="sobre__conteudo__texto">Sou um estudande de Ciências Contábeis que começou a se interessar por programação, comecei meu aprendizado procurando cursos online e estou bastante empolgado em programar.</p>
+					<p class="sobre__conteudo__texto">Em processo para desenvolver minhas competências na área, fiz alguns cursos no Codecademy(HTML, CSS, JavaScript, C), e estou atualmente participando do Programa ONE da Alura, fazendo cursos e desenvolvendo projetos, entrando em contato ainda mais com área de front-end e futuramente com Back-end.</p>
+					<p class="sobre__conteudo__assinatura">Rafael</p>
+				</div>
+			</section>
+			<section class="skills-hobbies container" id="skills">
+				<h2 class="titulo-sections">Skills</h2>
+				<ul class="skills-hobbies__cards">
+					<li class="cards__item"><img class="cards__img" src="img/javaScript-logo.png">JavaScript</li>
+					<li class="cards__item"><img class="cards__img" src="img/html-logo.png">Html 5</li>
+					<li class="cards__item"><img class="cards__img" id="css-logo" src="img/css-logo.png">CSS</li>
+					<li class="cards__item"><img class="cards__img" src="img/c-logo.png">C</li>
+					<li class="cards__item"><img class="cards__img" src="img/ingles-logo.png">Inglês</li>
+				</ul>
+			</section>
+			<section class="skills-hobbies container" id="hobbies">
+				<h2 class="titulo-sections">Hobbies</h2>
+				<ul class="skills-hobbies__cards">
+					<li class="cards__item"><img class="cards__img" src="img/leitura-logo.png">Leitura</li>
+					<li class="cards__item"><img class="cards__img" src="img/music-logo.png">Ouvir música</li>
+					<li class="cards__item"><img class="cards__img" src="img/tv-logo.png">Assistir séries</li>
+					<li class="cards__item"><img class="cards__img" src="img/games-logo.jpg">Games</li>
+					<li class="cards__item"><img class="cards__img" src="img/esportes-logo.png">Praticar esportes</li>
+				</ul>
+			</section>
+			<section class="formacao container bg-escuro" id="formacao">
+				<h2 class="titulo-sections formacao__titulo">Formação acadêmica</h2>
+				<ul class="formacao__cursos">
+					<li class="cursos__item">
+						<img class="cursos__item--img" src="img/alura-logo.png">
+						<p class="cursos__item--titulo">Formação Front-end - ONE</p>
+						<p class="cursos__item--subtitulo">2022 - Alura</p>
+					</li>
+					<li class="cursos__item">
+						<img class="cursos__item--img" src="img/alura-logo.png">
+						<p class="cursos__item--titulo business">Business Agility - ONE</p>
+						<p class="cursos__item--subtitulo">2021 - Alura</p>
+					</li>
+					<li class="cursos__item">
+						<img class="cursos__item--img" src="img/ufs-logo.jpg">
+						<p class="cursos__item--titulo">Graduação Ciências Contábeis</p>
+						<p class="cursos__item--subtitulo">Em andamento - UFS</p>
+					</li>
+				</ul>
+			</section>
+			<section class="projetos container">
+				<h2 class="titulo-sections projetos__titulo">Experiência Profissional</h2>
+				<section class="projeto__1">
+					<img src="./img/criptografo.gif" alt="Projeto decodificador de texto com javaScript" class="projetos__img">
+					<div class="projetos__descricao">
+						<h3 class="projetos__descricao-titulo">Decodificador de textos</h3>
+						<p class="projetos__descricao-subtitulo">Challenge Alura Codificador</p>
+						<button class="projetos__descricao-botao"><a href="https://github.com/RafaelC12/Challenge1OracleAlura.github.io" target="_blank">Repositório</a></button>
+						<button class="projetos__descricao-botao"><a href="https://rafaelc12.github.io/Challenge1OracleAlura.github.io/" target="_blank">Ver demo</a></button>
 					</div>
 				</section>
-				<section class="sobre" id="sobre-mim">
-					<h2 class="sobre__titulo">Sobre mim</h2>
-					<div class="sobre__conteudo">
-						<p class="sobre__conteudo--texto">Sou um estudande de Ciências Contábeis que começou a se interessar por programação, comecei meu aprendizado procurando cursos online e estou bastante empolgado em programar.</p>
-						<p class="sobre__conteudo--texto">Em processo para desenvolver minhas competências na área, fiz alguns cursos no Codecademy(HTML, CSS, JavaScript, C), e estou atualmente participando do Programa ONE da Alura, fazendo cursos e desenvolvendo projetos, entrando em contato ainda mais com área de front-end e futuramente com Back-end.</p>
-						<p class="sobre__conteudo--assinatura">Rafael</p>
-					</div>
-				</section>
-				<section class="skills-hobbies" id="skills">
-					<h2 class="titulo-sections">Skills</h2>
-					<ul class="skills-hobbies__cards">
-						<li class="cards__item"><img class="cards__img" src="img/javaScript-logo.png">JavaScript</li>
-						<li class="cards__item"><img class="cards__img" src="img/html-logo.png">Html 5</li>
-						<li class="cards__item"><img class="cards__img" id="css-logo" src="img/css-logo.png">CSS</li>
-						<li class="cards__item"><img class="cards__img" src="img/c-logo.png">C</li>
-						<li class="cards__item"><img class="cards__img" src="img/ingles-logo.png">Inglês</li>
-					</ul>
-				</section>
-				<section class="skills-hobbies" id="hobbies">
-					<h2 class="titulo-sections">Hobbies</h2>
-					<ul class="skills-hobbies__cards">
-						<li class="cards__item"><img class="cards__img" src="img/leitura-logo.png">Leitura</li>
-						<li class="cards__item"><img class="cards__img" src="img/music-logo.png">Ouvir música</li>
-						<li class="cards__item"><img class="cards__img" src="img/tv-logo.png">Assistir séries</li>
-						<li class="cards__item"><img class="cards__img" src="img/games-logo.jpg">Games</li>
-						<li class="cards__item"><img class="cards__img" src="img/esportes-logo.png">Praticar esportes</li>
-					</ul>
-				</section>
-				<section class="formacao" id="formacao">
-					<h2 class="titulo-sections formacao__titulo">Formação acadêmica</h2>
-					<ul class="formacao__cursos">
-						<li class="cursos__item">
-							<img class="cursos__item--img" src="img/alura-logo.png">
-							<p class="cursos__item--titulo">Formação Front-end - ONE</p>
-							<p class="cursos__item--subtitulo">2022 - Alura</p>
-						</li>
-						<li class="cursos__item">
-							<img class="cursos__item--img" src="img/alura-logo.png">
-							<p class="cursos__item--titulo business">Business Agility - ONE</p>
-							<p class="cursos__item--subtitulo">2021 - Alura</p>
-						</li>
-						<li class="cursos__item">
-							<img class="cursos__item--img" src="img/ufs-logo.jpg">
-							<p class="cursos__item--titulo">Graduação Ciências Contábeis</p>
-							<p class="cursos__item--subtitulo">Em andamento - UFS</p>
-						</li>
-					</ul>
-				</section>
-				<section class="projetos">
-					<h2 class="titulo-sections projetos__titulo">Experiência Profissional</h2>
-					<section class="projeto__1">
-						<img src="./img/criptografo.gif" alt="Projeto decodificador de texto com javaScript" class="projetos__img">
-						<div class="projetos__descricao">
-							<h3 class="projetos__descricao-titulo">Decodificador de textos</h3>
-							<p class="projetos__descricao-subtitulo">Challenge Alura Codificador</p>
-							<button class="projetos__descricao-botao">Repositório</button>
-							<button class="projetos__descricao-botao">Ver demo</button>
-						</div>
-					</section>
-				</section>
-				<form>
+			</section>
+			<form>
 					
-				</form>
-			</main>
-			<footer>
-				
-			</footer>
-		</div>
+			</form>
+		</main>
+		<footer>
+
+		</footer>
 	</body>
 </html>

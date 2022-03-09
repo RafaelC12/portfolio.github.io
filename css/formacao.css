@@ -1,3 +1,19 @@
+.formacao {
+    padding-bottom: 82px;
+    width: 100%;
+}
+
+.formacao__titulo {
+    margin-bottom: 32px;
+    padding-top: 82px;
+}
+
+.formacao__cursos {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
 .cursos__item {
     display: flex;
     flex-direction: column;
@@ -29,8 +45,23 @@
 }
 
 @media screen and (max-width: 860px) {
+    .formacao__cursos {
+        align-items: center;
+        flex-flow: column nowrap;
+        justify-content: space-evenly;
+    }    
+
     .cursos__item {
         width: 90vw;
+        height: 70vh;
+    }
+
+    .cursos__item--titulo {
+        font-size: 18px;
+    }
+
+    .cursos__item--subtitulo {
+        font-size: 16px;
     }
 
     .cursos__item--img {

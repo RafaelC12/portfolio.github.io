@@ -1,3 +1,24 @@
+.painel {
+    display: flex;
+	height: 88px;
+    justify-content: space-between;
+}
+
+.logo {
+    align-items: center;
+	display: flex;
+}
+
+.logo__img {
+    height: 28px;
+	width: 28px;
+}
+
+.logo__nome {
+    font-weight: bold;
+	padding-top: 0.3rem;
+}
+
 .navegacao__lista {
 	align-items: center;
 	display: flex;
@@ -20,7 +41,7 @@
 	border-radius: 5px;
 	font-weight: bold;
 	padding: 2px;
-	transform: scale(1.2);
+	transform: scale(1.4);
 }
 
 .navegacao__lista--item--email {
@@ -35,4 +56,10 @@
 	.navegacao__lista--item--email {
 		display: block;
 	}
+}
+
+@media screen and (max-width: 480px) {
+    .painel {
+        height: 70px;
+    }
 }
