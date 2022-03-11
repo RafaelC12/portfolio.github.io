@@ -1,0 +1,99 @@
+.contato {
+    padding: 65.5px 10%;
+    margin-top: 96px;
+    display: flex;
+}
+
+.contato__imagem  {
+    width: 40%;
+}
+
+.contato__corpo {
+    width: 40%;
+    flex-grow: 1;
+    margin-left: 1rem;
+}
+
+.contato__titulos {
+    margin-bottom: 2rem;
+    line-height: 1.1;
+}
+
+.contato__titulo {
+    text-align: left;
+    margin-bottom: .5rem;
+}
+
+.contato__titulos p {
+    font-size: 18px;
+}
+
+.contato__formulario {
+    display: flex;
+    flex-direction: column;
+}
+
+.contato__formulario__campos {
+    padding: .5rem .75rem 0 .75rem;
+    display: flex;
+    flex-direction: column;
+    background: #E4E5C6;
+    margin-bottom: 2rem;
+    height: 3.688rem;
+    border-radius: 5px;
+}
+
+.contato__formulario__label {
+    font-size: 14px;
+    width: 100%;
+}
+
+.contato__formulario__input { 
+    flex-grow: 1;
+    font-size: 18px;
+    width: 100%;
+    border: none;
+    background-color: #E4E5C6;
+    padding-bottom: 0.5rem;
+}
+
+.contato__formulario__input:hover {
+    border-bottom: 2px solid #222222;
+}
+
+.contato__formulario__input:focus {
+    outline: 0;
+}
+
+textarea {
+    resize: none;
+}
+
+#campos--mensagem {
+    height: 8.313rem;
+}
+
+.contato__formulario__botao {
+    height: 3.188rem;
+    width: 10.313rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #E4E5C6;
+    background: #222222;
+}
+
+.contato__formulario__botao:hover {
+    color: #3CBFBA;
+}
+
+@media screen and (max-width: 860px) {
+    .contato__imagem {
+        display: none;
+    }
+
+    .contato__corpo {
+        width: 100%;
+        margin-left: 0;
+    }
+}

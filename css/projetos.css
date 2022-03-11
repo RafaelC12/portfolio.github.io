@@ -5,6 +5,14 @@
     margin-bottom: 64px;
 }
 
+.projeto__2 {
+    align-items: center;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    margin-bottom: 32px;
+}
+
 .projetos__titulo {
     margin: 32px 0;
 }
@@ -30,6 +38,7 @@
 .projetos__descricao-subtitulo {
     font-size: 16px;
     margin-bottom: 0.5rem;
+    margin-right: 1rem;
 }
 
 .projetos__descricao-botao {
@@ -53,7 +62,7 @@
 }
 
 @media screen and (max-width: 678px) {
-    .projeto__1 {
+    .projeto__1, .projeto__2 {
         display: block;
     }
 

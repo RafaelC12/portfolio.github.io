@@ -13,6 +13,8 @@
 		<link rel="stylesheet" href="./css/skills-hobbies.css" />
 		<link rel="stylesheet" href="./css/formacao.css" />
 		<link rel="stylesheet" href="./css/projetos.css" />
+		<link rel="stylesheet" href="./css/contato.css" />
+		<link rel="stylesheet" href="./css/rodape.css" />
 	</head>
 	<body>
 		<header class="painel container bg-escuro">
@@ -92,10 +94,10 @@
 					</li>
 				</ul>
 			</section>
-			<section class="projetos container">
+			<section class="projetos container" id="projetos">
 				<h2 class="titulo-sections projetos__titulo">Experiência Profissional</h2>
 				<section class="projeto__1">
-					<img src="./img/criptografo.gif" alt="Projeto decodificador de texto com javaScript" class="projetos__img">
+					<img src="./img/criptografo.gif" alt="Gif do projeto decodificador de texto com javaScript" class="projetos__img">
 					<div class="projetos__descricao">
 						<h3 class="projetos__descricao-titulo">Decodificador de textos</h3>
 						<p class="projetos__descricao-subtitulo">Challenge Alura Codificador</p>
@@ -103,13 +105,49 @@
 						<button class="projetos__descricao-botao"><a href="https://rafaelc12.github.io/Challenge1OracleAlura.github.io/" target="_blank">Ver demo</a></button>
 					</div>
 				</section>
+				<section class="projeto__2">
+					<img src="./img/forca.png" alt="Gif do projeto jogo da forca com javaScript" class="projetos__img">
+					<div class="projetos__descricao">
+						<h3 class="projetos__descricao-titulo">Jogo da Forca</h3>
+						<p class="projetos__descricao-subtitulo">Challenge Alura Jogo da forca</p>
+						<button class="projetos__descricao-botao"><a href="https://github.com/RafaelC12/JogoDaForca-Challenge2AluraOne.github.io" target="_blank">Repositório</a></button>
+						<button class="projetos__descricao-botao"><a href="https://rafaelc12.github.io/JogoDaForca-Challenge2AluraOne.github.io/" target="_blank">Ver demo</a></button>
+					</div>
+				</section>
 			</section>
-			<form>
-					
-			</form>
+			<section class="contato container bg-escuro" id="contato">
+				<img src="./img/contato.png" alt="imagem de um telefone para contato" class="contato__imagem">
+				<div class="contato__corpo">
+					<div class="contato__titulos">
+						<h3 class="titulo-sections contato__titulo">Contato</h3>
+						<p>Quer entrar em contato comigo?</p>
+						<p>Preencha o formulário abaixo e entrarei em contato o mais rápido possível.</p>
+					</div>
+					<form class="contato__formulario">
+						<div class="contato__formulario__campos">
+							<label for="nome" class="contato__fomulario__label">Nome</label>
+							<input type="text" class="contato__formulario__input ativo" id="nome" placeholder="Nome">
+						</div>
+						<div class="contato__formulario__campos">
+							<label for="email" class="contato__fomulario__label">E-mail</label>
+							<input type="email" class="contato__formulario__input ativo" id="email" placeholder="Ex: contato@email.com">
+						</div>
+						<div class="contato__formulario__campos">
+							<label for="assunto" class="contato__fomulario__label">Assunto</label>
+							<input type="text" class="contato__formulario__input ativo" id="assunto" placeholder="Assunto">
+						</div>
+						<div class="contato__formulario__campos" id="campos--mensagem">
+							<label for="mensagem" class="contato__fomulario__label">Mensagem</label>
+							<textarea type="text" class="contato__formulario__input ativo" id="mensagem" placeholder="Mensagem"></textarea>
+						</div>
+						<button class="contato__formulario__botao">Enviar mensagem</button>
+					</form>
+				</div>
+			</section>
 		</main>
-		<footer>
-
+		<footer class="rodape container">
+			<p>Desenvolvido por Rafael Chagas</p>
+			<p>&copy;2022</p>
 		</footer>
 	</body>
 </html>

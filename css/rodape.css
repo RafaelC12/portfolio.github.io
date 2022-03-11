@@ -1,0 +1,8 @@
+.rodape {
+    display: flex;
+    flex-direction: column;
+    height: 6.375rem;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
