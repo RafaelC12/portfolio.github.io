@@ -26,6 +26,10 @@ body {
 	text-align: center;
 }
 
+.apagar {
+	display: none;
+}
+
 /*@media screen and (max-width: 480px) {
 	
 }*/

@@ -24,12 +24,24 @@
 			</div>
 			<nav class="navegacao">
 				<ul class="navegacao__lista">
-					<li class="navegacao__lista--item"><a class="navegacao__lista--link" href="#sobre-mim">Sobre mim</a></li>
-					<li class="navegacao__lista--item"><a class="navegacao__lista--link" href="#skills">Skills</a></li>
-					<li class="navegacao__lista--item"><a class="navegacao__lista--link" href="#hobbies">Hobbies</a></li>
-					<li class="navegacao__lista--item"><a class="navegacao__lista--link" href="#formacao">Formação</a></li>
-					<li class="navegacao__lista--item"><a class="navegacao__lista--link" href="#projetos">Projetos</a></li>
-					<li class="navegacao__lista--item navegacao__lista--item--email">rafaelcchagas@outlook.com</li>
+					<li class="navegacao__lista--item">
+						<a class="navegacao__lista--link" href="#sobre-mim">Sobre mim</a>
+					</li>
+					<li class="navegacao__lista--item">
+						<a class="navegacao__lista--link" href="#skills">Skills</a>
+					</li>
+					<li class="navegacao__lista--item">
+						<a class="navegacao__lista--link" href="#hobbies">Hobbies</a>
+					</li>
+					<li class="navegacao__lista--item">
+						<a class="navegacao__lista--link" href="#formacao">Formação</a>
+					</li>
+					<li class="navegacao__lista--item">
+						<a class="navegacao__lista--link" href="#projetos">Projetos</a>
+					</li>
+					<li class="navegacao__lista--item navegacao__lista--item--email">
+						rafaelcchagas@outlook.com
+					</li>
 				</ul>
 			</nav>
 		</header>
@@ -40,9 +52,15 @@
 					<h1 class="conteudo__titulo">Olá, meu nome é Rafael Chagas e construo páginas Web</h1>
 					<p class="conteudo__resumo">Atualmente faço parte do projeto Oracle ONE na Alura, aprendendo programação front-end e aplicando em projetos.</p>
 					<ul class="conteudo__links">
-						<li class="conteudo__links github"><a href="https://github.com/RafaelC12" target="_blank">Github 🡥</a></li>
-						<li class="conteudo__links linkedin"><a href="https://www.linkedin.com/in/rafael-chagas-16799620b/" target="_blank">Linkedin 🡥</a></li>
-						<li class="conteudo__links curriculo"><a href="">Currículo 🡥</a></li>
+						<li class="conteudo__links github">
+							<a href="https://github.com/RafaelC12" target="_blank">Github 🡥</a>
+						</li>
+						<li class="conteudo__links linkedin">
+							<a href="https://www.linkedin.com/in/rafael-chagas-16799620b/" target="_blank">Linkedin 🡥</a>
+						</li>
+						<li class="conteudo__links curriculo">
+							<a href="">Currículo 🡥</a>
+						</li>
 					</ul>
 				</div>
 			</section>
@@ -123,24 +141,28 @@
 						<p>Quer entrar em contato comigo?</p>
 						<p>Preencha o formulário abaixo e entrarei em contato o mais rápido possível.</p>
 					</div>
-					<form class="contato__formulario">
+					<form class="contato__formulario" onsubmit="submitForm(event)">
 						<div class="contato__formulario__campos">
 							<label for="nome" class="contato__fomulario__label">Nome</label>
-							<input type="text" class="contato__formulario__input ativo" id="nome" placeholder="Nome">
+							<input type="text" class="contato__formulario__input ativo" id="nome" placeholder="Nome" oninvalid="mostraMensagemDeErro()" data-form-nome required>
+							<span class="contato__formulario__erro apagar" id="form-erro">Preencha aqui com seu Nome</span>
 						</div>
 						<div class="contato__formulario__campos">
 							<label for="email" class="contato__fomulario__label">E-mail</label>
-							<input type="email" class="contato__formulario__input ativo" id="email" placeholder="Ex: contato@email.com">
+							<input type="email" class="contato__formulario__input ativo" id="email" placeholder="Ex: contato@email.com" pattern="^\w+([.-]?\w+)+@\w+([.-]?\w+)+([.]+\w{2,3})+$" oninvalid="mostraMensagemDeErro()" data-tipo="email" required>
+							<span class="contato__formulario__erro apagar" id="form-erro">Formato de e-mail inválido</span>
 						</div>
 						<div class="contato__formulario__campos">
 							<label for="assunto" class="contato__fomulario__label">Assunto</label>
-							<input type="text" class="contato__formulario__input ativo" id="assunto" placeholder="Assunto">
+							<input type="text" class="contato__formulario__input ativo" id="assunto" placeholder="Assunto" oninvalid="mostraMensagemDeErro()" data-form-assunto required>
+							<span class="contato__formulario__erro apagar" id="form-erro">Preencha este campo(máximo de 50 caracteres)</span>
 						</div>
 						<div class="contato__formulario__campos" id="campos--mensagem">
 							<label for="mensagem" class="contato__fomulario__label">Mensagem</label>
-							<textarea type="text" class="contato__formulario__input ativo" id="mensagem" placeholder="Mensagem"></textarea>
+							<textarea type="text" class="contato__formulario__input ativo" id="mensagem" placeholder="Mensagem" oninvalid="mostraMensagemDeErro()" data-form-mensagem required></textarea>
+							<span class="contato__formulario__erro apagar" id="form-erro">Preencha este campo(máximo de 300 caracteres)</span>
 						</div>
-						<button class="contato__formulario__botao">Enviar mensagem</button>
+						<input type="submit" class="contato__formulario__botao" data-form-botao>
 					</form>
 				</div>
 			</section>
@@ -149,5 +171,7 @@
 			<p>Desenvolvido por Rafael Chagas</p>
 			<p>&copy;2022</p>
 		</footer>
+		<script src="./js/contatoFormulario.js"></script>
+		<script src="./js/mensagemErro.js"></script>
 	</body>
 </html>
