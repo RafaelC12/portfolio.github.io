@@ -40,7 +40,9 @@ const Header = () => {
                     <LogoImg src={imgLogo} alt='Logo da portfólio' />
                     <h2>Rafael Chagas</h2>
                 </LogoContainer>
-
+                <nav>
+                    
+                </nav>
             </HeaderContainer>
         </ThemeProvider>
     )
