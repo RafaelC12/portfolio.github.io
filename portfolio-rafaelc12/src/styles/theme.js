@@ -9,7 +9,8 @@ export const darkTheme = {
 export const lightTheme = {
     accent: '#24b3d2',
     background: '#eaebec',
-    hover: '#b9bcbf',
+    hover: '#146597',
+    // hover: '#b9bcbf',
     text: '#122b43',
     titles: '#122b43',
 }
